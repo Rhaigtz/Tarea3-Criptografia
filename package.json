@@ -1,0 +1,26 @@
+{
+  "name": "Tarea3-Criptografia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rhaigtz/Tarea3-Criptografia.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rhaigtz/Tarea3-Criptografia/issues"
+  },
+  "homepage": "https://github.com/Rhaigtz/Tarea3-Criptografia#readme",
+  "dependencies": {
+    "crypto-js": "^4.0.0",
+    "npm-rc4": "^1.0.9",
+    "rc4-crypt": "^1.0.0",
+    "rc4.js": "^1.2.0"
+  }
+}
