@@ -1,0 +1,23 @@
+{
+  "name": "Tarea3Cripto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "decrypt.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rhaigtz/Tarea3-Criptografia.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rhaigtz/Tarea3-Criptografia/issues"
+  },
+  "homepage": "https://github.com/Rhaigtz/Tarea3-Criptografia#readme",
+  "dependencies": {
+    "crypto-js": "^4.0.0"
+  }
+}
