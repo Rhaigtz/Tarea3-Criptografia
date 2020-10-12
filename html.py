@@ -1,11 +1,13 @@
-from arc4 import ARC4
-from reece4 import Text
-from rece4 import encrypt, decrypt
+import webbrowser
 
-encrypted = encrypt('key', 'text')
+f = open('helloworld.html', 'wb')
 
-print(encrypted)
-decrypted = decrypt('key', encrypted)
+message = """<html>
+<head></head>
+<body><p>Hello World!</p></body>
+</html>"""
 
+f.write(message)
+f.close()
 
-print(decrypted)
+webbrowser.open_new_tab('helloworld.html')
