@@ -12,7 +12,7 @@ message = """<html>
 <body>
 <p>Esta pagina contiene un mensaje encriptado</p>
 
-<div classname={} id={}>
+<div class={} id={}>
 </div>
 </body>
 </html>""".format('rc4', encrypted.hex())
