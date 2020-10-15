@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         TareaCripto 3
 // @namespace    http://tampermonkey.net/
-// @include      file:///C:/Users/Nicolas/Desktop/Development/Tarea3Cripto/helloworld.html
+// @include      https://htmlpreview.github.io/?https://github.com/Rhaigtz/Tarea3-Criptografia/blob/master/index.html
 // @version      0.1
 // @description  try to take over the world!
 // @author       You
@@ -87,14 +87,22 @@
     return outputText;
   }
 
-  new RC4("key 123");
-  let encryptedTag = document.getElementsByTagName("div")[0];
+  console.log("ejecutandome");
 
-  console.log(encryptedTag);
+  function decryptMessage() {
+    const encryptedKey = document.getElementsByClassName("key")[0].id;
+    console.log(encryptedKey);
+    new RC4(encryptedKey);
+    let encryptedTag = document.getElementsByClassName("rc4")[0];
 
-  const decryptedText = decrypt(encryptedTag.id).toString();
+    console.log(encryptedTag);
 
-  console.log(decryptedText);
+    const decryptedText = decrypt(encryptedTag.id).toString();
 
-  encryptedTag.innerHTML += decryptedText;
+    console.log(decryptedText);
+
+    encryptedTag.innerHTML += decryptedText;
+  }
+
+  setTimeout(decryptMessage, 1000);
 })();
