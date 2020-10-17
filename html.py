@@ -2,7 +2,16 @@ import webbrowser
 from oscrypto import symmetric
 import codecs
 
-encrypted = symmetric.rc4_encrypt(b'key123', b'text')
+key = input('Ingrese llave: ')
+plain_text = input('Ingrese texto plano a encriptar: \n')
+
+
+while len(key) < 5 or len(key) > 16:
+    key = input('La llave debe tener un tamaño entre 5 a 16 caracteres, vuelva a ingresar la llave: ')
+
+
+
+encrypted = symmetric.rc4_encrypt(codecs.encode(key,'utf-8'), codecs.encode(plain_text,'utf-8'))
 
 
 f = open('index.html', 'wb')
@@ -18,7 +27,7 @@ message = """<html>
 </div>
 
 </body>
-</html>""".format('rc4', encrypted.hex(), 'key', 'key123' )
+</html>""".format('rc4', encrypted.hex(), 'key', key )
 
 f.write(message.encode('utf-8'))
 f.close()

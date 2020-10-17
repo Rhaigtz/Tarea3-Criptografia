@@ -5,7 +5,9 @@
 // @version      0.1
 // @description  try to take over the world!
 // @author       You
-// @match        https://www.tampermonkey.net/index.php?version=4.11&ext=dhdg&updated=true
+// @updateURL    https://github.com/Rhaigtz/Tarea3-Criptografia/blob/master/tampermonkey.js
+// @downloadURL  https://github.com/Rhaigtz/Tarea3-Criptografia/blob/master/tampermonkey.js
+// @match        https://htmlpreview.github.io/?https://github.com/Rhaigtz/Tarea3-Criptografia/blob/master/index.html
 // @grant        none
 
 // ==/UserScript==
